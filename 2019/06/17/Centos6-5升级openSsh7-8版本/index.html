@@ -96,16 +96,18 @@
 
 
 
-  <meta name="description" content="spring,spring boot,linux,mysql">
-<meta property="og:type" content="website">
-<meta property="og:title" content="-无言-">
-<meta property="og:url" content="http://wu-yan-Wang.github.io/index.html">
+  <meta name="description" content="[TOC]  准备工作查看是否安装telnet1rpm -qa |grep telnet  安装telnet123451. yum install xinetd2. yum install telnet3. yum install telnet-server   如果安装时报错,说明yum的源不对,可设置本地挂载,从官网下载yum的源文件,上传至服务器,修改/etc/yum.repos.d/rh">
+<meta name="keywords" content="linux,openssh,openssl,telnet">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Centos6.5升级openSSH7.8版本">
+<meta property="og:url" content="http://wu-yan-Wang.github.io/2019/06/17/Centos6-5升级openSsh7-8版本/index.html">
 <meta property="og:site_name" content="-无言-">
-<meta property="og:description" content="spring,spring boot,linux,mysql">
+<meta property="og:description" content="[TOC]  准备工作查看是否安装telnet1rpm -qa |grep telnet  安装telnet123451. yum install xinetd2. yum install telnet3. yum install telnet-server   如果安装时报错,说明yum的源不对,可设置本地挂载,从官网下载yum的源文件,上传至服务器,修改/etc/yum.repos.d/rh">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-06-17T11:07:03.485Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="-无言-">
-<meta name="twitter:description" content="spring,spring boot,linux,mysql">
+<meta name="twitter:title" content="Centos6.5升级openSSH7.8版本">
+<meta name="twitter:description" content="[TOC]  准备工作查看是否安装telnet1rpm -qa |grep telnet  安装telnet123451. yum install xinetd2. yum install telnet3. yum install telnet-server   如果安装时报错,说明yum的源不对,可设置本地挂载,从官网下载yum的源文件,上传至服务器,修改/etc/yum.repos.d/rh">
 
 
 
@@ -113,7 +115,7 @@
 
   
   
-  <link rel="canonical" href="http://wu-yan-Wang.github.io/">
+  <link rel="canonical" href="http://wu-yan-Wang.github.io/2019/06/17/Centos6-5升级openSsh7-8版本/">
 
 
 
@@ -123,7 +125,7 @@
   };
 </script>
 
-  <title>-无言-</title>
+  <title>Centos6.5升级openSSH7.8版本 | -无言-</title>
   
 
 
@@ -171,8 +173,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -210,7 +211,7 @@
         
         
           
-          <li class="menu-item menu-item-home menu-item-active">
+          <li class="menu-item menu-item-home">
 
     
     
@@ -340,9 +341,9 @@
           
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -374,10 +375,8 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/06/17/Centos6-5升级openSsh7-8版本/" class="post-title-link" itemprop="url">Centos6.5升级openSSH7.8版本</a>
+          <h1 class="post-title" itemprop="name headline">Centos6.5升级openSSH7.8版本
+
               
             
           </h1>
@@ -459,9 +458,7 @@
       
 
       
-        
-          
-            <hr>
+        <hr>
 <p>[TOC]</p>
 <hr>
 <h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><h3 id="查看是否安装telnet"><a href="#查看是否安装telnet" class="headerlink" title="查看是否安装telnet"></a>查看是否安装telnet</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rpm -qa |grep telnet</span><br></pre></td></tr></table></figure>
@@ -506,8 +503,6 @@
 
 <p>关闭telnet服务即可 <code>如果担心ssh不可用,可先不关闭,等待几天再关</code></p>
 
-          
-        
       
     </div>
 
@@ -528,14 +523,29 @@
 
     <footer class="post-footer">
       
+        
+          
+        
+        <div class="post-tags">
+          
+            <a href="/tags/linux/" rel="tag"># linux</a>
+          
+            <a href="/tags/openssh/" rel="tag"># openssh</a>
+          
+            <a href="/tags/openssl/" rel="tag"># openssl</a>
+          
+            <a href="/tags/telnet/" rel="tag"># telnet</a>
+          
+        </div>
+      
+
+      
+      
+      
 
       
 
       
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -545,14 +555,19 @@
   </article>
 
 
-    
-  </section>
-
-  
+  </div>
 
 
           </div>
           
+
+  
+    <div class="comments" id="gitalk-container">
+    </div>
+
+  
+
+
 
         </div>
         
@@ -572,8 +587,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -667,6 +691,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#准备工作"><span class="nav-number">1.</span> <span class="nav-text">准备工作</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#查看是否安装telnet"><span class="nav-number">1.1.</span> <span class="nav-text">查看是否安装telnet</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装telnet"><span class="nav-number">1.2.</span> <span class="nav-text">安装telnet</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#修改disable-yes为no"><span class="nav-number">1.3.</span> <span class="nav-text">修改disable yes为no</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#重新启动"><span class="nav-number">1.4.</span> <span class="nav-text">重新启动</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#防火墙增加23端口"><span class="nav-number">1.5.</span> <span class="nav-text">防火墙增加23端口</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#重启防火墙"><span class="nav-number">1.6.</span> <span class="nav-text">重启防火墙</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#查看防火墙规则"><span class="nav-number">1.7.</span> <span class="nav-text">查看防火墙规则</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装依赖包"><span class="nav-number">1.8.</span> <span class="nav-text">安装依赖包</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#查看是否成功"><span class="nav-number">1.9.</span> <span class="nav-text">查看是否成功</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装openssl"><span class="nav-number">2.</span> <span class="nav-text">安装openssl</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#备份openssl"><span class="nav-number">2.1.</span> <span class="nav-text">备份openssl</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#解压源码并安装openssl"><span class="nav-number">2.2.</span> <span class="nav-text">解压源码并安装openssl</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装openssh"><span class="nav-number">3.</span> <span class="nav-text">安装openssh</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#备份openssh"><span class="nav-number">3.1.</span> <span class="nav-text">备份openssh</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#解压并安装openssh"><span class="nav-number">3.2.</span> <span class="nav-text">解压并安装openssh</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#测试是否可以连接"><span class="nav-number">3.3.</span> <span class="nav-text">测试是否可以连接</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       
@@ -798,6 +839,10 @@
 
 
   
+  <script src="/js/scrollspy.js?v=7.1.2"></script>
+<script src="/js/post-details.js?v=7.1.2"></script>
+
+
 
   
 
@@ -813,6 +858,37 @@
 
   
 
+
+  
+    
+
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+
+
+<script src="//cdn.jsdelivr.net/npm/js-md5@0.7.3/src/md5.min.js"></script>
+
+<script>
+  var gitalk = new Gitalk({
+    clientID: '5fc031be9c168e238dc9',
+    clientSecret: '0c8dfbbe040e19ec6a2c8e92af8ad8a4f57eaf08',
+    repo: 'recode-blog',
+    owner: 'wu-yan-Wang',
+    admin: ['wu-yan-Wang'],
+    id: md5(location.pathname),
+    
+      language: 'zh-CN',
+    
+    distractionFreeMode: 'true'
+  });
+  gitalk.render('gitalk-container');
+</script>
+
+  
 
 
   
