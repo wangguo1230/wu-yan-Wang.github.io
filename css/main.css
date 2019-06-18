@@ -1773,7 +1773,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #918139;
+  background: #4a46ff;
 }
 .feed-link,
 .chat {
@@ -2989,4 +2989,15 @@ code {
   background: #f9f2f4;
   color: #c7254e;
   word-break: break-all;
+}
+.highlight,
+pre {
+  margin: 5px 0;
+  padding: 5px;
+  border-radius: 3px;
+}
+.highlight,
+code,
+pre {
+  border: 1px solid #d6d6d6;
 }
