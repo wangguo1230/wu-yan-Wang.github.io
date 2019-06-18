@@ -96,18 +96,18 @@
 
 
 
-  <meta name="description" content="[TOC]  准备工作查看是否安装telnet1rpm -qa |grep telnet  安装telnet123451. yum install xinetd2. yum install telnet3. yum install telnet-server   如果安装时报错,说明yum的源不对,可设置本地挂载,从官网下载yum的源文件,上传至服务器,修改/etc/yum.repos.d/rh">
+  <meta name="description" content="准备工作查看是否安装telnet1rpm -qa |grep telnet  安装telnet123451. yum install xinetd2. yum install telnet3. yum install telnet-server   如果安装时报错,说明yum的源不对,可设置本地挂载,从官网下载yum的源文件,上传至服务器,修改/etc/yum.repos.d/rhel-sour">
 <meta name="keywords" content="linux,openssh,openssl,telnet">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Centos6.5升级openSSH7.8版本">
-<meta property="og:url" content="http://wu-yan-Wang.github.io/2019/06/17/Centos6-5升级openSsh7-8版本/index.html">
+<meta property="og:url" content="http://wu-yan-Wang.github.io/post/3SQ4FWZ.html">
 <meta property="og:site_name" content="-无言-">
-<meta property="og:description" content="[TOC]  准备工作查看是否安装telnet1rpm -qa |grep telnet  安装telnet123451. yum install xinetd2. yum install telnet3. yum install telnet-server   如果安装时报错,说明yum的源不对,可设置本地挂载,从官网下载yum的源文件,上传至服务器,修改/etc/yum.repos.d/rh">
+<meta property="og:description" content="准备工作查看是否安装telnet1rpm -qa |grep telnet  安装telnet123451. yum install xinetd2. yum install telnet3. yum install telnet-server   如果安装时报错,说明yum的源不对,可设置本地挂载,从官网下载yum的源文件,上传至服务器,修改/etc/yum.repos.d/rhel-sour">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-06-17T11:30:46.942Z">
+<meta property="og:updated_time" content="2019-06-17T13:01:21.286Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Centos6.5升级openSSH7.8版本">
-<meta name="twitter:description" content="[TOC]  准备工作查看是否安装telnet1rpm -qa |grep telnet  安装telnet123451. yum install xinetd2. yum install telnet3. yum install telnet-server   如果安装时报错,说明yum的源不对,可设置本地挂载,从官网下载yum的源文件,上传至服务器,修改/etc/yum.repos.d/rh">
+<meta name="twitter:description" content="准备工作查看是否安装telnet1rpm -qa |grep telnet  安装telnet123451. yum install xinetd2. yum install telnet3. yum install telnet-server   如果安装时报错,说明yum的源不对,可设置本地挂载,从官网下载yum的源文件,上传至服务器,修改/etc/yum.repos.d/rhel-sour">
 
 
 
@@ -115,7 +115,7 @@
 
   
   
-  <link rel="canonical" href="http://wu-yan-Wang.github.io/2019/06/17/Centos6-5升级openSsh7-8版本/">
+  <link rel="canonical" href="http://wu-yan-Wang.github.io/post/3SQ4FWZ">
 
 
 
@@ -228,40 +228,6 @@
         
         
           
-          <li class="menu-item menu-item-linux">
-
-    
-    
-    
-      
-    
-
-    
-
-    <a href="/categories/linux/" rel="section"><i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br>linux</a>
-
-  </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-about">
-
-    
-    
-    
-      
-    
-
-    
-
-    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
-
-  </li>
-        
-        
-        
-          
           <li class="menu-item menu-item-tags">
 
     
@@ -358,7 +324,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://wu-yan-Wang.github.io/2019/06/17/Centos6-5升级openSsh7-8版本/">
+    <link itemprop="mainEntityOfPage" href="http://wu-yan-Wang.github.io/post/3SQ4FWZ.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="无言">
@@ -401,7 +367,7 @@
                 
               
 
-              <time title="创建时间：2019-06-17 13:15:33 / 修改时间：19:30:46" itemprop="dateCreated datePublished" datetime="2019-06-17T13:15:33+08:00">2019-06-17</time>
+              <time title="创建时间：2019-06-17 13:15:33 / 修改时间：21:01:21" itemprop="dateCreated datePublished" datetime="2019-06-17T13:15:33+08:00">2019-06-17</time>
             
 
             
@@ -423,7 +389,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/linux/" itemprop="url" rel="index"><span itemprop="name">linux</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/linux-openSSH/" itemprop="url" rel="index"><span itemprop="name">linux - openSSH</span></a></span>
 
                 
                 
@@ -459,8 +425,6 @@
 
       
         <hr>
-<p>[TOC]</p>
-<hr>
 <h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><h3 id="查看是否安装telnet"><a href="#查看是否安装telnet" class="headerlink" title="查看是否安装telnet"></a>查看是否安装telnet</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rpm -qa |grep telnet</span><br></pre></td></tr></table></figure>
 
 <h3 id="安装telnet"><a href="#安装telnet" class="headerlink" title="安装telnet"></a>安装telnet</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">1. yum install xinetd</span><br><span class="line"></span><br><span class="line">2. yum install telnet</span><br><span class="line"></span><br><span class="line">3. yum install telnet-server</span><br></pre></td></tr></table></figure>
@@ -483,6 +447,7 @@
 </blockquote>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum -y install gcc pam-devel zlib-devel</span><br></pre></td></tr></table></figure>
 
+<a id="more"></a>
 <h3 id="查看是否成功"><a href="#查看是否成功" class="headerlink" title="查看是否成功"></a>查看是否成功</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">whereis zlib</span><br></pre></td></tr></table></figure>
 
 <h2 id="安装openssl"><a href="#安装openssl" class="headerlink" title="安装openssl"></a>安装openssl</h2><h3 id="备份openssl"><a href="#备份openssl" class="headerlink" title="备份openssl"></a>备份openssl</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mv /usr/bin/openssl /usr/bin/openssl.old</span><br><span class="line"></span><br><span class="line">mv /usr/include/openssl/ /usr/include/openssl.old</span><br></pre></td></tr></table></figure>
@@ -543,6 +508,22 @@
       
       
 
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/post/13PNXYB.html" rel="prev" title="hexo-url链接有中文问题">
+                hexo-url链接有中文问题 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
       
 
       
@@ -614,7 +595,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-count">2</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -633,7 +614,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">1</span>
+                      
+                    
+                    <span class="site-state-item-count">2</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -658,7 +641,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">4</span>
+                      
+                    
+                    <span class="site-state-item-count">5</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>

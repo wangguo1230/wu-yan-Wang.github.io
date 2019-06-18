@@ -227,40 +227,6 @@
         
         
           
-          <li class="menu-item menu-item-linux">
-
-    
-    
-    
-      
-    
-
-    
-
-    <a href="/categories/linux/" rel="section"><i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br>linux</a>
-
-  </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-about">
-
-    
-    
-    
-      
-    
-
-    
-
-    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
-
-  </li>
-        
-        
-        
-          
           <li class="menu-item menu-item-tags">
 
     
@@ -357,7 +323,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://wu-yan-Wang.github.io/2019/06/17/Centos6-5升级openSsh7-8版本/">
+    <link itemprop="mainEntityOfPage" href="http://wu-yan-Wang.github.io/post/13PNXYB.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="无言">
@@ -377,7 +343,7 @@
           <h1 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/2019/06/17/Centos6-5升级openSsh7-8版本/" class="post-title-link" itemprop="url">Centos6.5升级openSSH7.8版本</a>
+                <a href="/post/13PNXYB.html" class="post-title-link" itemprop="url">hexo-url链接有中文问题</a>
               
             
           </h1>
@@ -402,7 +368,7 @@
                 
               
 
-              <time title="创建时间：2019-06-17 13:15:33 / 修改时间：19:30:46" itemprop="dateCreated datePublished" datetime="2019-06-17T13:15:33+08:00">2019-06-17</time>
+              <time title="创建时间：2019-06-17 19:53:40 / 修改时间：20:53:37" itemprop="dateCreated datePublished" datetime="2019-06-17T19:53:40+08:00">2019-06-17</time>
             
 
             
@@ -424,7 +390,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/linux/" itemprop="url" rel="index"><span itemprop="name">linux</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/hexo/" itemprop="url" rel="index"><span itemprop="name">hexo</span></a></span>
 
                 
                 
@@ -461,9 +427,179 @@
       
         
           
-            <hr>
-<p>[TOC]</p>
-<hr>
+            <h2 id="使用hexo-abbrlink这个插件来解决url链接有中文乱码问题。"><a href="#使用hexo-abbrlink这个插件来解决url链接有中文乱码问题。" class="headerlink" title="使用hexo-abbrlink这个插件来解决url链接有中文乱码问题。"></a>使用hexo-abbrlink这个插件来解决url链接有中文乱码问题。</h2><ol>
+<li>安装插件</li>
+</ol>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-abbrlink --save</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>配置站点配置文件<code>_config.yml</code></li>
+</ol>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">permalink:</span> <span class="string">post/:abbrlink.html</span></span><br><span class="line"><span class="attr">abbrlink:</span></span><br><span class="line"><span class="attr">  alg:</span> <span class="string">crc32</span>  <span class="comment"># 算法：crc16(default) and crc32</span></span><br><span class="line"><span class="attr">  rep:</span> <span class="string">hex</span>    <span class="comment"># 进制：dec(default) and hex</span></span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>可以修改scaffolds里的模版文件，修改post.md为:</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: &#123;&#123; title &#125;&#125;</span><br><span class="line">date: &#123;&#123; date &#125;&#125;</span><br><span class="line">comments: true</span><br><span class="line">categories:</span><br><span class="line">tags:</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://wu-yan-Wang.github.io/post/3SQ4FWZ.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="无言">
+      <meta itemprop="description" content="spring,spring boot,linux,mysql">
+      <meta itemprop="image" content="/images/cat.jpeg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="-无言-">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/post/3SQ4FWZ.html" class="post-title-link" itemprop="url">Centos6.5升级openSSH7.8版本</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-06-17 13:15:33 / 修改时间：21:01:21" itemprop="dateCreated datePublished" datetime="2019-06-17T13:15:33+08:00">2019-06-17</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/linux-openSSH/" itemprop="url" rel="index"><span itemprop="name">linux - openSSH</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <hr>
 <h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><h3 id="查看是否安装telnet"><a href="#查看是否安装telnet" class="headerlink" title="查看是否安装telnet"></a>查看是否安装telnet</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rpm -qa |grep telnet</span><br></pre></td></tr></table></figure>
 
 <h3 id="安装telnet"><a href="#安装telnet" class="headerlink" title="安装telnet"></a>安装telnet</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">1. yum install xinetd</span><br><span class="line"></span><br><span class="line">2. yum install telnet</span><br><span class="line"></span><br><span class="line">3. yum install telnet-server</span><br></pre></td></tr></table></figure>
@@ -485,28 +621,15 @@
 <p>先执行<code>whereis zlib</code> 如果有输出文件目录就不用执行下面的安装</p>
 </blockquote>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum -y install gcc pam-devel zlib-devel</span><br></pre></td></tr></table></figure>
-
-<h3 id="查看是否成功"><a href="#查看是否成功" class="headerlink" title="查看是否成功"></a>查看是否成功</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">whereis zlib</span><br></pre></td></tr></table></figure>
-
-<h2 id="安装openssl"><a href="#安装openssl" class="headerlink" title="安装openssl"></a>安装openssl</h2><h3 id="备份openssl"><a href="#备份openssl" class="headerlink" title="备份openssl"></a>备份openssl</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mv /usr/bin/openssl /usr/bin/openssl.old</span><br><span class="line"></span><br><span class="line">mv /usr/include/openssl/ /usr/include/openssl.old</span><br></pre></td></tr></table></figure>
-
-<h3 id="解压源码并安装openssl"><a href="#解压源码并安装openssl" class="headerlink" title="解压源码并安装openssl"></a>解压源码并安装openssl</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">1. tar xf openssl-1.0.2h.tar.gz </span><br><span class="line">2. cd openssl-1.0.2h/</span><br><span class="line">3. ./config --shared zlib //必须加上--shared,否则编译时会找不到新安装的openssl的库而报错,默认安装目录为/usr/local/ssl/</span><br><span class="line">4. make</span><br><span class="line">5. make test //这一步结果必须为pass才能继续</span><br><span class="line">6. make install</span><br><span class="line">7. ln -s /usr/local/ssl/bin/openssl /usr/bin/openssl </span><br><span class="line">8. ln -s /usr/local/ssl/include/openssl /usr/include/openssl</span><br><span class="line">9. echo &quot;/usr/local/ssl/lib&quot;&gt; /etc/ld.so.conf.d/openssl.conf</span><br><span class="line">10. ldconfig</span><br><span class="line">11. openssl version -a</span><br></pre></td></tr></table></figure>
-
-<h2 id="安装openssh"><a href="#安装openssh" class="headerlink" title="安装openssh"></a>安装openssh</h2><h3 id="备份openssh"><a href="#备份openssh" class="headerlink" title="备份openssh"></a>备份openssh</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">1. mv /etc/init.d/sshd /etc/init.d/sshd.old</span><br><span class="line">2. mv /etc/ssh /etc/ssh.old</span><br><span class="line">3. mv /usr/sbin/sshd /usr/sbin/sshd.old</span><br><span class="line">4. mv /usr/bin/ssh /usr/bin/ssh.old</span><br></pre></td></tr></table></figure>
-
-<h3 id="解压并安装openssh"><a href="#解压并安装openssh" class="headerlink" title="解压并安装openssh"></a>解压并安装openssh</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">1. tar xf openssh-7.8p1.tar.gz</span><br><span class="line">2. cd openssh-7.8p1</span><br><span class="line">3. ./configure --prefix=/usr/local/openssh --sysconfdir=/etc/ssh --with-pam --with-ssl-dir=/usr/local/ssl --with-md5-passwords -mandir=/usr/share/man --with-zlib </span><br><span class="line">4. make &amp;&amp; make install</span><br><span class="line">5. cp contrib/redhat/sshd.init /etc/init.d/sshd</span><br><span class="line">6. chmod +x /etc/init.d/sshd</span><br><span class="line">7. cp /usr/local/openssh/sbin/sshd /usr/sbin/sshd</span><br><span class="line">8. cp /usr/local/openssh/bin/ssh /usr/bin/</span><br><span class="line">9. ssh -V #查看版本</span><br><span class="line">10. /etc/init.d/sshd restart 或 service sshd restart</span><br></pre></td></tr></table></figure>
-
-<h3 id="测试是否可以连接"><a href="#测试是否可以连接" class="headerlink" title="测试是否可以连接"></a>测试是否可以连接</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">ssh sdwz@10.72.11.124</span><br><span class="line"></span><br><span class="line">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</span><br><span class="line">@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @</span><br><span class="line">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</span><br><span class="line">IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!</span><br><span class="line">Someone could be eavesdropping on you right now (man-in-the-middle attack)!</span><br><span class="line">It is also possible that a host key has just been changed.</span><br><span class="line">The fingerprint for the RSA key sent by the remote host is</span><br><span class="line">SHA256:SfqGfJPlzcmIvgC+9sSyGKM5EULvrvRrXcU9Zjctvy4.</span><br><span class="line">Please contact your system administrator.</span><br><span class="line">Add correct host key in C:\\Users\\li_lfang/.ssh/known_hosts to get rid of this message.</span><br><span class="line">Offending RSA key in C:\\Users\\li_lfang/.ssh/known_hosts:3</span><br><span class="line">RSA host key for 10.72.11.124 has changed and you have requested strict checking.</span><br><span class="line">Host key verification failed.</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>出现这些信息 把用户的.ssh文件夹下的known_hosts改名或删除即可</p>
-</blockquote>
-<p>连接成功后,执行</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">1. service xinetd stop # 停止telnet</span><br><span class="line">2. vi /etc/sysconfig/iptables #删除23的规则</span><br><span class="line">3. service xinetd stop #重启防火墙</span><br><span class="line">5. iptables --list -n #查看是否有23的规则</span><br><span class="line">6. vi /etc/xinetd.d/telnet # 修改telnet配置中的disable为no</span><br></pre></td></tr></table></figure>
-
-<p>关闭telnet服务即可 <code>如果担心ssh不可用,可先不关闭,等待几天再关</code></p>
-
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/post/3SQ4FWZ.html#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -590,7 +713,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-count">2</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -609,7 +732,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">1</span>
+                      
+                    
+                    <span class="site-state-item-count">2</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -634,7 +759,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">4</span>
+                      
+                    
+                    <span class="site-state-item-count">5</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
