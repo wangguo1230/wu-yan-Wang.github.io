@@ -1622,6 +1622,16 @@ pre .javascript .function {
 .fancybox-close:hover {
   border: none;
 }
+.post-copyright {
+  margin: 2em 0 0;
+  padding: 0.5em 1em;
+  border-left: 3px solid #ff1700;
+  background-color: #f9f9f9;
+  list-style: none;
+}
+.post-copyright i.fa {
+  font-size: 15px;
+}
 .rtl.post-body p,
 .rtl.post-body a,
 .rtl.post-body h1,
@@ -1767,7 +1777,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff75e4;
+  background: #9cff1d;
 }
 .feed-link,
 .chat {
@@ -2973,14 +2983,6 @@ ul.breadcrumb li+li:last-child {
   -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.5);
   -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
 }
-.post-body h2,
-h3,
-h4,
-h5,
-h6 {
-  border-left: 4px solid #16a085;
-  background-color: #f7f7f7;
-}
 .posts-collapse .post-title a {
   color: #5073b8;
 }
@@ -3042,6 +3044,12 @@ body {
   top: 5px;
   height: 40px;
   border-bottom: none;
+}
+.posts-collapse .post-header:hover::before {
+  background: #fc6423;
+}
+.posts-collapse .post-header a:hover {
+  color: #fc6423;
 }
 .posts-expand .post-meta time {
   border-bottom: 0;

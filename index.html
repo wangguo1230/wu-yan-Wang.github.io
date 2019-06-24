@@ -366,6 +366,215 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://wu-yan-Wang.github.io/post/MXBSKJ.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="无言">
+      <meta itemprop="description" content="spring,spring boot,linux,mysql">
+      <meta itemprop="image" content="/images/catP.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="-无言-">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/post/MXBSKJ.html" class="post-title-link" itemprop="url">mysql主从配置</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-06-24 13:17:48 / 修改时间：13:50:44" itemprop="dateCreated datePublished" datetime="2019-06-24T13:17:48+08:00">2019-06-24</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/mysql/" itemprop="url" rel="index"><span itemprop="name">mysql</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+            <span id="/post/MXBSKJ.html" class="leancloud_visitors" data-flag-title="mysql主从配置">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              
+                <span class="post-meta-item-text">阅读次数：</span>
+              
+                <span class="leancloud-visitors-count"></span>
+            </span>
+          
+
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数">1.6k</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">1 分钟</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h1 id="mysql主从配置"><a href="#mysql主从配置" class="headerlink" title="mysql主从配置"></a>mysql主从配置</h1><p><code>主IP 10.72.45.63 从IP 192.168.10.128</code></p>
+<h2 id="找到windows下的my-ini文件-增加log-bin以及服务id"><a href="#找到windows下的my-ini文件-增加log-bin以及服务id" class="headerlink" title="找到windows下的my.ini文件,增加log-bin以及服务id"></a>找到windows下的my.ini文件,增加log-bin以及服务id</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">log-bin=mysql-bin   #[必须]启用二进制日志</span><br><span class="line">server-id=63      #[必须]服务器唯一ID，默认是1，一般取IP最后一段;</span><br></pre></td></tr></table></figure>
+
+<h2 id="找到LINUX下的my-cnf文件增加log-bin以及服务id"><a href="#找到LINUX下的my-cnf文件增加log-bin以及服务id" class="headerlink" title="找到LINUX下的my.cnf文件增加log-bin以及服务id"></a>找到LINUX下的my.cnf文件增加log-bin以及服务id</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">log-bin=mysql-bin   #[必须]启用二进制日志</span><br><span class="line">server-id=128      #[必须]服务器唯一ID，默认是1，一般取IP最后一段;</span><br></pre></td></tr></table></figure>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/post/MXBSKJ.html#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://wu-yan-Wang.github.io/post/13PNXYB.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -428,7 +637,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-06-24 11:50:03" itemprop="dateModified" datetime="2019-06-24T11:50:03+08:00">2019-06-24</time>
+                <time title="修改时间：2019-06-24 13:53:21" itemprop="dateModified" datetime="2019-06-24T13:53:21+08:00">2019-06-24</time>
               
             
           </span>
@@ -485,7 +694,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">365</span>
+                <span title="本文字数">357</span>
               
 
               
@@ -520,22 +729,18 @@
 
       
         
-          
-            <h2 id="使用hexo-abbrlink这个插件来解决url链接有中文乱码问题。"><a href="#使用hexo-abbrlink这个插件来解决url链接有中文乱码问题。" class="headerlink" title="使用hexo-abbrlink这个插件来解决url链接有中文乱码问题。"></a>使用hexo-abbrlink这个插件来解决url链接有中文乱码问题。</h2><ol>
-<li>安装插件</li>
-</ol>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-abbrlink --save</span><br></pre></td></tr></table></figure>
+          <h1 id="使用hexo-abbrlink这个插件来解决url链接有中文乱码问题。"><a href="#使用hexo-abbrlink这个插件来解决url链接有中文乱码问题。" class="headerlink" title="使用hexo-abbrlink这个插件来解决url链接有中文乱码问题。"></a>使用hexo-abbrlink这个插件来解决url链接有中文乱码问题。</h1><h2 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-abbrlink --save</span><br></pre></td></tr></table></figure>
 
-<ol start="2">
-<li>配置站点配置文件<code>_config.yml</code></li>
-</ol>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">permalink:</span> <span class="string">post/:abbrlink.html</span></span><br><span class="line"><span class="attr">abbrlink:</span></span><br><span class="line"><span class="attr">  alg:</span> <span class="string">crc32</span>  <span class="comment"># 算法：crc16(default) and crc32</span></span><br><span class="line"><span class="attr">  rep:</span> <span class="string">hex</span>    <span class="comment"># 进制：dec(default) and hex</span></span><br></pre></td></tr></table></figure>
-
-<ol start="3">
-<li>可以修改scaffolds里的模版文件，修改post.md为:</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: &#123;&#123; title &#125;&#125;</span><br><span class="line">date: &#123;&#123; date &#125;&#125;</span><br><span class="line">comments: true</span><br><span class="line">categories:</span><br><span class="line">tags:</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<h2 id="配置站点配置文件-config-yml"><a href="#配置站点配置文件-config-yml" class="headerlink" title="配置站点配置文件_config.yml"></a>配置站点配置文件<code>_config.yml</code></h2><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">permalink:</span> <span class="string">post/:abbrlink.html</span></span><br><span class="line"><span class="attr">abbrlink:</span></span><br><span class="line"><span class="attr">  alg:</span> <span class="string">crc32</span>  <span class="comment"># 算法：crc16(default) and crc32</span></span><br><span class="line"><span class="attr">  rep:</span> <span class="string">hex</span>    <span class="comment"># 进制：dec(default) and hex</span></span><br></pre></td></tr></table></figure>
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/post/13PNXYB.html#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -635,12 +840,24 @@
                 
               
 
-              <time title="创建时间：2019-06-17 13:15:33 / 修改时间：21:01:21" itemprop="dateCreated datePublished" datetime="2019-06-17T13:15:33+08:00">2019-06-17</time>
+              <time title="创建时间：2019-06-17 13:15:33" itemprop="dateCreated datePublished" datetime="2019-06-17T13:15:33+08:00">2019-06-17</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-06-24 13:54:03" itemprop="dateModified" datetime="2019-06-24T13:54:03+08:00">2019-06-24</time>
               
             
           </span>
@@ -657,7 +874,14 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/linux-openSSH/" itemprop="url" rel="index"><span itemprop="name">linux - openSSH</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/linux/" itemprop="url" rel="index"><span itemprop="name">linux</span></a></span>
+
+                
+                
+                  ，
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/linux/openSSH/" itemprop="url" rel="index"><span itemprop="name">openSSH</span></a></span>
 
                 
                 
@@ -733,27 +957,13 @@
       
         
           <hr>
-<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><h3 id="查看是否安装telnet"><a href="#查看是否安装telnet" class="headerlink" title="查看是否安装telnet"></a>查看是否安装telnet</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rpm -qa |grep telnet</span><br></pre></td></tr></table></figure>
+<h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><h2 id="查看是否安装telnet"><a href="#查看是否安装telnet" class="headerlink" title="查看是否安装telnet"></a>查看是否安装telnet</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rpm -qa |grep telnet</span><br></pre></td></tr></table></figure>
 
-<h3 id="安装telnet"><a href="#安装telnet" class="headerlink" title="安装telnet"></a>安装telnet</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">1. yum install xinetd</span><br><span class="line"></span><br><span class="line">2. yum install telnet</span><br><span class="line"></span><br><span class="line">3. yum install telnet-server</span><br></pre></td></tr></table></figure>
+<h2 id="安装telnet"><a href="#安装telnet" class="headerlink" title="安装telnet"></a>安装telnet</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">1. yum install xinetd</span><br><span class="line"></span><br><span class="line">2. yum install telnet</span><br><span class="line"></span><br><span class="line">3. yum install telnet-server</span><br></pre></td></tr></table></figure>
 
 <blockquote>
 <p>如果安装时报错,说明yum的源不对,可设置本地挂载,从官网下载yum的源文件,上传至服务器,修改/etc/yum.repos.d/rhel-source.repo 文件,具体的自行百度</p>
 </blockquote>
-<h3 id="修改disable-yes为no"><a href="#修改disable-yes为no" class="headerlink" title="修改disable yes为no"></a>修改disable yes为no</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi /etc/xinetd.d/telnet</span><br></pre></td></tr></table></figure>
-
-<h3 id="重新启动"><a href="#重新启动" class="headerlink" title="重新启动"></a>重新启动</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">service xinetd restart</span><br></pre></td></tr></table></figure>
-
-<h3 id="防火墙增加23端口"><a href="#防火墙增加23端口" class="headerlink" title="防火墙增加23端口"></a>防火墙增加23端口</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">vi /etc/sysconfig/iptables</span><br><span class="line"></span><br><span class="line">-A INPUT -p tcp -m tcp --dport 23 -j ACCEPT</span><br></pre></td></tr></table></figure>
-
-<h3 id="重启防火墙"><a href="#重启防火墙" class="headerlink" title="重启防火墙"></a>重启防火墙</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">service iptables restart</span><br></pre></td></tr></table></figure>
-
-<h3 id="查看防火墙规则"><a href="#查看防火墙规则" class="headerlink" title="查看防火墙规则"></a>查看防火墙规则</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">iptables --list -n</span><br></pre></td></tr></table></figure>
-
-<h3 id="安装依赖包"><a href="#安装依赖包" class="headerlink" title="安装依赖包"></a>安装依赖包</h3><blockquote>
-<p>先执行<code>whereis zlib</code> 如果有输出文件目录就不用执行下面的安装</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum -y install gcc pam-devel zlib-devel</span><br></pre></td></tr></table></figure>
           <!--noindex-->
           
             <div class="post-button text-center">
@@ -846,7 +1056,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-count">3</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -867,7 +1077,11 @@
                     
                       
                     
-                    <span class="site-state-item-count">2</span>
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">4</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -896,7 +1110,13 @@
                     
                       
                     
-                    <span class="site-state-item-count">6</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">9</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -940,14 +1160,16 @@
 <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div id="myCanvasContainer" class="widget tagcloud">
-        <canvas width="250" height="250" id="resCanvas" style="width=100%">
-            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/openssh/">openssh</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/openssl/">openssl</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/permalink/">permalink</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/telnet/">telnet</a><span class="tag-list-count">1</span></li></ul>
+        <canvas width="200" height="250" id="resCanvas" style="width:100%">
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mysql/">mysql</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/openssh/">openssh</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/openssl/">openssl</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/permalink/">permalink</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/slave/">slave</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/telnet/">telnet</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/主从复制/">主从复制</a><span class="tag-list-count">1</span></li></ul>
         </canvas>
     </div>
 </div>
 <style>
 .widget-title{
     border-left: 4px solid #16a085;
+    padding-left: 5px;
+    background: #f7f7f7;
 }
 </style>
 
@@ -980,7 +1202,7 @@
       <i class="fa fa-area-chart"></i>
     </span>
     
-    <span title="站点总字数">3k</span>
+    <span title="站点总字数">5k</span>
   
 
   
@@ -989,7 +1211,7 @@
       <i class="fa fa-coffee"></i>
     </span>
     
-    <span title="站点阅读时长">3 分钟</span>
+    <span title="站点阅读时长">4 分钟</span>
   
 </div>
 
@@ -1017,7 +1239,7 @@
     <!-- 博客字数统计 -->
     <span class="site-pv">
       <i class="fa fa-pencil"></i>
-      博客全站共： <span class="post-count">770</span> 字
+      博客全站共： <span class="post-count">1.3k</span> 字
     </span>
 </div>
 <!-- 新增访客统计代码 END-->
