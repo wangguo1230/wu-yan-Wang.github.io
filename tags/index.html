@@ -398,7 +398,7 @@
         
           <div class="tag-cloud">
 <div class="tag-cloud-tags" id="tags">
-<a href="/tags/hexo-permalink/" style="font-size: 12px; color: #fff">hexo permalink</a> <a href="/tags/linux/" style="font-size: 12px; color: #fff">linux</a> <a href="/tags/openssh/" style="font-size: 12px; color: #fff">openssh</a> <a href="/tags/openssl/" style="font-size: 12px; color: #fff">openssl</a> <a href="/tags/telnet/" style="font-size: 12px; color: #fff">telnet</a>
+<a href="/tags/hexo/" style="font-size: 12px; color: #fff">hexo</a> <a href="/tags/linux/" style="font-size: 12px; color: #fff">linux</a> <a href="/tags/openssh/" style="font-size: 12px; color: #fff">openssh</a> <a href="/tags/openssl/" style="font-size: 12px; color: #fff">openssl</a> <a href="/tags/permalink/" style="font-size: 12px; color: #fff">permalink</a> <a href="/tags/telnet/" style="font-size: 12px; color: #fff">telnet</a>
 </div>
 </div>
 <br>
@@ -407,39 +407,59 @@
 var alltags=document.getElementById('tags');
 var tags=alltags.getElementsByTagName('a');
 
-for (var i = tags.length - 
-1; i >= 0; i--) {
-    var r=Math.floor(Math.random()*75+130);
-    var g=Math.floor(Math.random()*75+100);
-    var b=Math.floor(Math.random()*75+80);
-    tags[i].style.background = "rgb("+r+","+g+","+b+")";
+//随机颜色
+function getColor() {
+    var colorElements = "0,1,2,3,4,5,6,7,8,9,a,b,c,d,e,f";
+    var colorArray = colorElements.split(",");
+    var color = "#";
+    for (var i = 0; i < 6; i++) {
+        color += colorArray[Math.floor(Math.random() * 16)];
+    }
+    return color;
 }
+
+//随机字体
+function getSize(){
+    return Math.floor(Math.random() * (30 - 10) + 10);
+}
+
+//改变样式
+function getTagHtml(tagArr){
+    if(tagArr!=null && tagArr.length>0){
+        for(var i=0;i<tagArr.length;i++){
+            var color = getColor();
+            var size = getSize();
+            tagArr[i].style.background = color;
+            tagArr[i].style.fontSize=size+'px';
+        }
+    }
+}
+
+getTagHtml(tags);
 </script>
 
 <style type="text/css">
 div#posts.posts-expand .tag-cloud a{
-background-color: #f5f7f1;
-border-radius: 6px;
-padding-left: 10px;
-padding-right: 10px;
-margin-top: 18px;
-
+    border-radius: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 18px;
 }
 
 .tag-cloud a{
-background-color: #f5f7f1;
-border-radius: 4px;
-padding-right: 5px;
-padding-left: 5px;
-margin-right: 5px;
-margin-left: 0px;
-margin-top: 8px;
-margin-bottom: 0px;
+    background-color: #f5f7f1;
+    border-radius: 4px;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-right: 5px;
+    margin-left: 0px;
+    margin-top: 8px;
+    margin-bottom: 0px;
 }
 
 .tag-cloud-tags{
-text-align: left;
-counter-reset: tags;
+    text-align: left;
+    counter-reset: tags;
 }
 </style>
           <!--<div class="tag-cloud">
@@ -466,11 +486,15 @@ counter-reset: tags;
                   
                 
               
-              目前共计 5 个标签
+                
+                  
+                
+              
+              目前共计 6 个标签
             </div>
             <div class="tag-cloud-tags">
               
-                <a href="/tags/hexo-permalink/" style="font-size: 5px; color: #f511c8">hexo permalink</a> <a href="/tags/linux/" style="font-size: 5px; color: #f511c8">linux</a> <a href="/tags/openssh/" style="font-size: 5px; color: #f511c8">openssh</a> <a href="/tags/openssl/" style="font-size: 5px; color: #f511c8">openssl</a> <a href="/tags/telnet/" style="font-size: 5px; color: #f511c8">telnet</a>
+                <a href="/tags/hexo/" style="font-size: 5px; color: #f511c8">hexo</a> <a href="/tags/linux/" style="font-size: 5px; color: #f511c8">linux</a> <a href="/tags/openssh/" style="font-size: 5px; color: #f511c8">openssh</a> <a href="/tags/openssl/" style="font-size: 5px; color: #f511c8">openssl</a> <a href="/tags/permalink/" style="font-size: 5px; color: #f511c8">permalink</a> <a href="/tags/telnet/" style="font-size: 5px; color: #f511c8">telnet</a>
               
             </div>
           </div>-->
@@ -577,7 +601,9 @@ counter-reset: tags;
                     
                       
                     
-                    <span class="site-state-item-count">5</span>
+                      
+                    
+                    <span class="site-state-item-count">6</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -614,24 +640,7 @@ counter-reset: tags;
           
             
           
-          <!--标签云-->
-
-<script type="text/javascript" charset="utf-8" src="/js/tagcloud.js"></script>
-<script type="text/javascript" charset="utf-8" src="/js/tagcanvas.js"></script>
-<div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
-    <div id="myCanvasContainer" class="widget tagcloud">
-        <canvas width="250" height="250" id="resCanvas" style="width=100%">
-            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo-permalink/">hexo permalink</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/openssh/">openssh</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/openssl/">openssl</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/telnet/">telnet</a><span class="tag-list-count">1</span></li></ul>
-        </canvas>
-    </div>
-</div>
-<style>
-.widget-title{
-    border-left: 4px solid #16a085;
-}
-</style>
-
+          
         </div>
       </div>
 
