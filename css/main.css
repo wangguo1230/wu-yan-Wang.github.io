@@ -1767,7 +1767,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #4db9ff;
+  background: #ff75e4;
 }
 .feed-link,
 .chat {
@@ -3042,4 +3042,8 @@ body {
   top: 5px;
   height: 40px;
   border-bottom: none;
+}
+.posts-expand .post-meta time {
+  border-bottom: 0;
+  cursor: auto;
 }
